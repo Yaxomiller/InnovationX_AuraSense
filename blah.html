@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraSense</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(61, 205, 133);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      background-color: black;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    nav ul li a:hover {
+      color: wheat;
+      font-size: 1.2rem;
+    }
+
+    main hr {
+      border: 0;
+      background: #000006;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .firstSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 130px 0;
+    }
+    .firstSection > div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 4rem;
+    }
+    .leftSection .buttons{
+      padding: 50px 0;
+    }
+    .leftSection .btn{
+      padding: 12px;
+      height:100px;
+      width:400px;
+      background: black;
+      color: rgba(255, 204, 0, 0.767);
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .RightSection img {
+      width: 100%;
+    }
+    .purple {
+      color: rgb(170, 107, 228);
+    }
+    .text-grey {
+      color: gray;
+      font-size: large;
+    }
+    #element {
+      color: rgb(170, 107, 228);
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+      background-color: aquamarine;
+      animation: backgroundAnimation 10s linear infinite;
+    }
+
+    /* {
+      margin: 0;
+      padding: 0;
+    } */
+
+    body {
+      animation: backgroundAnimation 10s ease-in-out infinite alternate;
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background-color: rgb(61, 205, 133);
+      }
+      50% {
+        background-color: #CBD18F;
+      }
+      100% {
+        background-color: rgb(61, 205, 133);
+      }
+    }
+
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
+    .secondSection .box {
+      background: white;
+      width: 73vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 100px;
+    }
+
+    .card-columns {
+      display: flex;
+      justify-content: space-between;
+      max-width: 500px;
+    }
+
+    .card {
+      width: 200px;
+      height: 280px;
+      margin: 20px;
+      border: 3px solid gray;
+      padding: 40px;
+      background-color: black;
+    }
+
+    .card-img-top {
+      max-height: 100px;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+    .card-text {
+      margin-top: 10px;
+    }
+    
+
+    footer {
+      background-color: black;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height:100px;
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+    .footer ul{
+      list-style: none;
+    }
+
+    .footer > div{
+      width: 123px;
+      display: inline-block;
+    }
+    .first{
+      display: inline;
+    }
+
+    footer .footer-rights{
+      text-align: center;
+      color: gray;
+      padding: 12px 0;
+    }
+    .btn1
+    {
+        padding: 12px;
+      height:160px;
+      width:400px;
+      
+      background: black;
+      color: rgba(255, 204, 0, 0.767);
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      margin-left: 120px;
+
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40px; /* Adjust the width as needed */
+      margin-right: 10px; /* Adjust the margin as needed */
+    }
+
+    .left {
+      font-size: 1.5rem;
+      color: white;
+    }
+    /* About Us Styles */
+.about-us {
+  text-align: center;
+  margin-top: 50px;
+  background-color: black; /* Background color based on the color scheme */
+  padding: 50px; /* Add padding for spacing */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+.about-us h2 {
+  font-size: 2.5rem; /* Increase font size for heading */
+  color: rgb(170, 107, 228); /* Text color based on the color scheme */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.about-us p {
+  font-size: 1.2rem; /* Font size for paragraphs */
+  color: white; /* Text color based on the color scheme */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.about-us p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}
+
+.main-content {
+  margin-bottom: 200px; /* Add margin to the bottom of the main content to prevent overlap with the footer */
+}
+.team
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="C:\Users\prana\Downloads\img_2-Photoroom.png-Photoroom.png" alt="AuraSense Logo">
+        <div class="left"><h2>AuraSense</h2></div>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#abt">About</a></li>
+          <li><a href="#t">Team</a></li>
+          <li><a href="h2.html">Farmers</a></li>
+          <li><a href="h (5).html">Consumers </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="main-content" style="margin-bottom: 150px;">
+    <section class="firstSection">
+      <div class="leftSection">
+        <div>Discover the Freshness of Nature with Every Bite!!</div>
+      </div>
+      <div class="RightSection">
+        <img src="C:\Users\prana\Downloads\img-Photoroom.png-Photoroom.png" alt="" />
+      </div>
+    </section>
+    <hr />
+
+    <section class="secondSection" style="margin-bottom: 150px;">
+      <a href="h2.html">
+        <button class="btn1" style="font-size: xx-large;" ><b>Farmers</b></button>
+      </a>
+      <a href="h (5).html">
+        <button class="btn1"  style="font-size: xx-large;" ><b>Consumers</b></button>
+      </a>
+      <div class="about-us" id="abt">
+        <h2>About Us</h2>
+        <p>At AuraSense, we are dedicated to revolutionizing agriculture and consumer health through innovative technology. Our project aims to develop a handheld device utilizing Raspberry Pi for real-time plant disease detection for farmers and vegetable quality detection for consumers.</p>
+        <p>The device will capture images of plant leaves and employ deep learning techniques to analyze them. Using convolutional neural networks (CNNs), the system will classify the leaves as healthy or diseased. If diseased, it will further provide recommendations on what fertilizer to use.</p>
+        <p>We're committed to ensuring food safety and sustainability. That's why our team is dedicated to training the model on a dataset of labeled images encompassing various plant diseases, enabling accurate detection and informed decision-making for farmers.</p>
+        <p>In addition, our solution includes a section where buyers can capture images of vegetables to predict their freshness and health status, empowering consumers to make informed purchasing decisions and promote healthier lifestyles.</p>
+        
+      </div>
+      <br>
+      <br>
+      <span class="text-grey" ></span>
+      <div class="team" id="t">
+        <h1 style="color:rgb(198, 136, 20); align-items: center;font-size: xx-large;">TEAM </h1>
+      </div>
+      <div class="card-columns">
+        <div class="card">
+          <img class="card-img-top" src="girl2.png" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">Pranav Naik</h5>
+            <p class="card-text">The change needs to happen and this way its gonna be great!</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="girl3.png" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">Aninda Mukhopadhyay</h5>
+            <p class="card-text">These are the small changes that would quantify for big impact.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="girl2.png" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">Atharva Joshi</h5>
+            <p class="card-text">It felt so happy yet so simple. Grateful to have been able to help.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="girl3.png" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">Nipun Y</h5>
+            <p class="card-text">These are the small changes that would quantify for big impact.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" style="display: none;">
+    <div class="footer">
+      
+        <p style="font-size:xx-large ;"> Small Steps Bring Big Smiles.</p>
+      
+      <!--<div class="second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </div>-->
+      
+    </div>
+    <div class="footer=rights">
+      Copyright &#169; www.AuraSense.com | All rights reserved
+    </div>
+  </footer>
+
+  <!--<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>-->
+  <script>
+    window.onscroll = function() {showFooter()};
+
+    function showFooter() {
+      var footer = document.getElementById("footer");
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        footer.style.display = "block";
+      } else {
+        footer.style.display = "none";
+      }
+    }
+  </script>
+  <!--SEtup and start animation-->
+  <!--<script>
+    var typed = new Typed("#element", {
+      strings: [
+        "Clothes",
+        "Instruments",
+        "Toys",
+        "Belongings",
+      ],
+      typeSpeed: 50,
+    });
+  </script>-->
+</body>
+</html>
